@@ -1,0 +1,35 @@
+<resources>
+
+	<style name="ViewTheme">
+		<item name="cmtpTextFrameDrawable">@drawable/cmtp_bg_frame</item>
+		<item name="cmtpTextSize">16sp</item>
+		<item name="cmtpTextColor">@color/black</item>
+	</style>
+
+	<!-- Dialog -->
+
+	<style name="DialogTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+		<item name="cmtpDialogFrameStyle">@style/DialogFrameStyle</item>
+		<item name="buttonBarPositiveButtonStyle">@style/Alert.Button.Positive</item>
+		<item name="android:windowBackground">@drawable/cmtp_bg_dialog</item>
+	</style>
+
+	<style name="DialogFrameStyle" parent="DialogTheme" />
+
+	<style name="CmtpDialogPositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+		<item name="android:textColor">@color/black</item>
+		<item name="android:background">@android:color/transparent</item>
+	</style>
+
+	<style name="DialogNegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+		<item name="android:textColor">@color/black</item>
+	</style>
+
+    <style name="Alert.Button.Positive" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="android:textColor">@color/cyan</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+</resources>
